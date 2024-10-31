@@ -13,8 +13,8 @@ const DialerScreen = () => {
   const navigate = useNavigate();
 
   return (
-    <div className="  text-gray-500 max-w-sm overflow-hidden  mx-auto px-4 ">
-      <div className=" min-h-screen bg-black relative flex flex-col justify-center items-center">
+    <div className=" h-screen text-gray-500 max-w-sm overflow-hidden  mx-auto  ">
+      <div className=" h-full bg-black relative flex flex-col justify-center items-center">
         <span className=" text-gray-100  text-2xl mb-3">
           {dialNumber || "Enter Number"}
         </span>
