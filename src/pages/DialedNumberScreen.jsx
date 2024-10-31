@@ -24,7 +24,7 @@ const DialedNumberScreen = () => {
   }, [navigate]);
   return (
     <div className="flex justify-center items-center  max-w-sm  mx-auto ">
-      <div className="flex flex-col items-center justify-between h-screen bg-gradient-to-b from-gray-800 to-gray-900 text-white p-8">
+      <div className="flex flex-col items-center justify-between h-screen  bg-gradient-to-b from-gray-800 to-gray-900 text-white p-20">
         <div className="flex flex-col items-center mt-8">
           <p className="text-sm text-gray-400">calling mobile...</p>
           <h1 className="text-2xl font-semibold mt-2"> {number} </h1>
