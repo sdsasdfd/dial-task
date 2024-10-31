@@ -13,7 +13,7 @@ const CallLogScreen = () => {
     dispatch(deleteCall(index));
   };
   return (
-    <div className="   text-gray-500 max-w-sm  mx-auto px-4">
+    <div className=" overflow-hidden  text-gray-500 max-w-sm  mx-auto px-4">
       <div className=" min-h-screen bg-black flex flex-col relative">
         <div className=" flex items-center my-4 relative pl-3">
           <span className=" text-blue-500 mt-1">Edit</span>
