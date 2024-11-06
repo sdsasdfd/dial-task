@@ -51,6 +51,7 @@ const dialNumberSlice = createSlice({
       state.recentCalls = state.recentCalls.filter(
         (_, index) => index !== action.payload
       );
+      saveCall(state.recentCalls);
     },
   },
 });
