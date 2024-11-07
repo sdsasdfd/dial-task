@@ -11,7 +11,7 @@ const dialNumberSlice = createSlice({
   initialState,
   reducers: {
     addDialNumber: (state, action) => {
-      state.dialNumber += action.payload;
+      state.dialNumber = state.dialNumber.concat(action.payload);
     },
     removeLastNumber: (state) => {
       state.dialNumber = state.dialNumber.slice(0, -1);
@@ -22,8 +22,7 @@ const dialNumberSlice = createSlice({
         time: getFormattedTime(),
       };
 
-      state.recentCalls.unshift(newCall);
-
+      state.recentCalls = [newCall, ...state.recentCalls];
       state.dialNumber = "";
     },
     deleteCall: (state, action) => {
