@@ -21,7 +21,7 @@ const DialerScreen = () => {
 
         <span className=" text-blue-600">Add Number</span>
         <div className=" mt-8 mb-5 grid grid-cols-3 gap-5">
-          <Button number={1} />
+          <Button number={1} one="1" />
           <Button number={2} letters={"ABC"} />
           <Button number={3} letters={"DEF"} />
           <Button number={4} letters={"GHI"} />
