@@ -4,7 +4,7 @@ import { NavLink } from "react-router-dom";
 
 const Footer = () => {
   return (
-    <div className="w-full px-2 flex items-center justify-between absolute bottom-1  bg-black pb-3">
+    <div className="w-full px-2 flex items-center justify-between sticky bottom-0  bg-black pb-1">
       <span className=" flex flex-col items-center justify-between text-gray-400">
         <Star size={22} />
         <span className=" text-xs">Favourites</span>

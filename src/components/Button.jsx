@@ -7,10 +7,14 @@ const Button = ({ number, letters }) => {
   return (
     <button
       onClick={() => dispatch(addDialNumber(number))}
-      className=" flex items-center justify-center flex-col bg-zinc-800 rounded-full text-gray-100 text-2xl w-16 h-16 cursor-pointer pt-2"
+      className=" flex items-center justify-center flex-col bg-zinc-800 rounded-full text-gray-100 text-2xl w-16 h-16 cursor-pointer pt-2 relative"
     >
-      <span className="  ">{number}</span>
-      {letters && <p className="text-xs text-gray-400">{letters}</p>}
+      <span className={`${letters ? "mb-2" : ""}`}>{number}</span>
+      {letters && (
+        <p className="text-[10px] tracking-widest text-gray-400  absolute  font-bold bottom-[-1px]">
+          {letters}
+        </p>
+      )}
     </button>
   );
 };

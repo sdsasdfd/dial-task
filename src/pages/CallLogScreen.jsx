@@ -13,8 +13,8 @@ const CallLogScreen = () => {
     dispatch(deleteCall(index));
   };
   return (
-    <div className=" overflow-hidden h-screen text-gray-500 max-w-sm  mx-auto ">
-      <div className=" h-full bg-black flex flex-col relative">
+    <div className=" h-screen text-gray-500 max-w-sm relative mx-auto ">
+      <div className=" min-h-[93vh] bg-black flex flex-col ">
         <div className=" flex items-center my-4 relative pl-3">
           <span className=" text-blue-500 mt-1">Edit</span>
           <div className="absolute top-0 left-[30%] space-x-6 bg-zinc-800 py-1 rounded-md px-[2px] text-white">
@@ -51,8 +51,8 @@ const CallLogScreen = () => {
             <span className="text-white">no call</span>
           )}
         </div>
-        <Footer />
       </div>
+      <Footer />
     </div>
   );
 };
